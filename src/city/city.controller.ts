@@ -10,6 +10,6 @@ export class CityController {
 
     @Get('/:stateId')
     async getAllCitiesByStateId(@Param('stateId') stateId: number): Promise<CityEntity[]>{
-        return this.cityService.gettAllCitiesByStateId(stateId)
+        return this.cityService.getAllCitiesByStateId(stateId)
     }
 }
